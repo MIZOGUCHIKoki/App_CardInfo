@@ -3,10 +3,12 @@ name: SwiftCI
 on: 
   push:
     branches: 
-      - master
+      - main
   pull_request:
     branches: 
       - '*'
+    types:
+      - open
 
 jobs:
   testing_macos:
